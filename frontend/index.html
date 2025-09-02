@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Serverless URL Shortener</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    h1 {
+      color: #0056b3;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    input[type="text"] {
+      width: 60%;
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .result {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 4px;
+      background: #e9f5ff;
+      border: 1px solid #b3d9ff;
+      word-break: break-word;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 1rem;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 AWS Serverless URL Shortener</h1>
+
+  <div class="card">
+    <h3>Create a Short URL</h3>
+    <input type="text" id="longUrl" placeholder="Enter long URL (https://...)" />
+    <button onclick="shortenUrl()">Shorten</button>
+    <div id="shortResult" class="result"></div>
+  </div>
+
+  <div class="card">
+    <h3>Check Stats</h3>
+    <input type="text" id="shortId" placeholder="Enter shortId" />
+    <button onclick="getStats()">Get Stats</button>
+    <div id="statsResult" class="result">
+      <pre id="statsOutput"></pre>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
