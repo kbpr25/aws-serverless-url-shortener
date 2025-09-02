@@ -35,14 +35,13 @@ aws-serverless-url-shortener/
 │ └── app.js
 │
 ├── backend/ # Lambda functions
-│ ├── shortenUrl.js
-│ ├── redirectUrl.js
-│ └── getStats.js
+│ ├── shortenUrl.py
+│ ├── redirectUrl.py
+│ └── getStats.py
 │
 ├── docs/ # Documentation
 │ ├── aws_serverless_url_shortener_poc.pdf
 │ ├── architecture-diagram.png
-│ └── screenshots/
 │
 └── README.md
 
