@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚀 AWS Serverless URL Shortener (Proof of Concept)
 
 This project is a **serverless URL shortener** built entirely on **Amazon Web Services (AWS)**.  
@@ -107,4 +106,3 @@ Response:
 =======
 # aws-serverless-url-shortener
 Serverless URL Shortener PoC using AWS (S3, API Gateway, Lambda, DynamoDB)
->>>>>>> 759663664bbe9bd02981921893b4a4b83d0913e7
